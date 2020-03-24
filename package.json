@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run build && node dist/src/index.js",
+    "start": "npm i && npm run build && node dist/src/index.js",
     "watch": "NODE_ENV=development nodemon src/index.js --exec babel-node",
     "lint": "eslint src/**/*.js --ignore-pattern \"node_modules/\"",
     "lint-fix": "eslint --fix src/**/*.js --ignore-pattern \"node_modules/\""
