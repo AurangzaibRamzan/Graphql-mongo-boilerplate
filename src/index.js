@@ -2,7 +2,7 @@ import { ApolloServer } from 'apollo-server';
 import connectDatabase from './dbConnection';
 
 import schema from './schema';
-const PORT = process.env.port || 4000
+const PORT = process.env.PORT || 4000
 connectDatabase();
 
 const server = new ApolloServer({
